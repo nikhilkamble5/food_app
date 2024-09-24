@@ -12,17 +12,18 @@ const Header = () => {
       </div>
 
       <div>
-        <ul className="flex gap-4">
+        <ul className="sm:flex gap-4 hidden cursor-pointer">
           <li>Home</li>
           <li>About</li>
           <li>offers</li>
           <li>Sign In</li>
         </ul>
-        <div>
-          <GiHamburgerMenu />
-        </div>
+       
       </div>
-      <div>
+      <div className="flex gap-5">
+        <p>
+          <GiHamburgerMenu size={30} className="cursor-pointer" />
+        </p>
         <p>
           <FaCartShopping size={30} />
         </p>
